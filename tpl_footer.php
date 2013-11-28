@@ -16,6 +16,21 @@ if (!defined('DOKU_INC')) die();
             tpl_license('button', true, false, false); // license button, no wrapper
             $target = ($conf['target']['extern']) ? 'target="'.$conf['target']['extern'].'"' : '';
         ?>
+		
+		<div style="margin:25px;">
+		<p style="margin:0px;">Advertisement</p>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Datacore - Bottom -->
+			<ins class="adsbygoogle"
+				 style="display:inline-block;width:728px;height:90px"
+				 data-ad-client="ca-pub-7134033472547187"
+				 data-ad-slot="9453644858"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			<p>If you do not want to see those ads, download <a href="https://getadblock.com/">AdBlock</a> for free!</p>
+		</div>
+		
         <a href="http://www.dokuwiki.org/donate" title="Donate" <?php echo $target?>><img
             src="<?php echo tpl_basedir(); ?>images/button-donate.gif" width="80" height="15" alt="Donate" /></a>
         <a href="http://www.php.net" title="Powered by PHP" <?php echo $target?>><img
