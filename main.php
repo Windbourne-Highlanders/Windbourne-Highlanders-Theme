@@ -57,7 +57,13 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                     <?php tpl_flush() ?>
                     <?php tpl_includeFile('pageheader.html') ?>
                     <!-- wikipage start -->
-                    <?php tpl_content() ?>
+					
+					<div id="wbh-content">
+					
+						<?php tpl_content() ?>
+						
+					</div>
+					
                     <!-- wikipage stop -->
                     <?php tpl_includeFile('pagefooter.html') ?>
                 </div>

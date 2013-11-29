@@ -346,7 +346,7 @@
 }
 
 .dokuwiki div.page {
-    background: url(../images/Hexagon20.png);
+    background: __background__);
     color: inherit;
     border: 1px solid __background_alt__;
     box-shadow: 0 0 .5em __text_alt__;
@@ -402,4 +402,39 @@
 #dokuwiki__footer div.buttons a:active img,
 #dokuwiki__footer div.buttons a:focus img {
     opacity: 1;
+}
+/*##################################################################
+####################################################################
+					WINDBOURNE HIGHLANDERS EDIT
+####################################################################
+##################################################################*/
+#wbh-content
+{
+	background-color: #181818;
+	border-radius: 5px;
+	padding: 15px;
+	color: #DEDEDE;
+	min-height: 190px;
+	opacity: 0.8;
+	box-shadow: 0 0 2em #181818;
+}
+
+.dokuwiki div.page
+{
+    background: url(images/Hexagon20.png);
+    box-shadow: 0 0 1em #000;
+	border-color: #000;
+}
+
+.dokuwiki .pageId span
+{
+    background-color: #181818;
+	border-color: #000;
+    color: #DEDEDE;
+    box-shadow: 0 0 1em #000;
+}
+
+#dokuwiki__header h1 a
+{
+    color: #DEDEDE;
 }
