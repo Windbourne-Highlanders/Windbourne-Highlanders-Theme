@@ -15,7 +15,7 @@ html {
 html,
 body {
     color: __text__;
-    background: __background_site__ url(images/page-gradient.png) top left repeat-x;
+    background: #1d1d1d url(images/page-gradient.png) top left repeat-x ;
     margin: 0;
     padding: 0;
 }
@@ -466,10 +466,12 @@ textarea[readonly] {
     background-color: #eee;
 }
 
-/* WINDBOURNE HIGHLANDERS EDIT
-********************************************************************/
+/*##################################################################
+####################################################################
+					WINDBOURNE HIGHLANDERS EDIT
+####################################################################
+##################################################################*
 body 
 {
-    
     background-color: #1d1d1d;
-}
+}*/
