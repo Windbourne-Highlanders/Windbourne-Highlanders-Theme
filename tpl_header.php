@@ -25,7 +25,7 @@ if (!defined('DOKU_INC')) die();
             // display logo and wiki title in a link to the home page
             tpl_link(
                 wl(),
-                '<img src="'.$logo.'" '.$logoSize[3].' alt="" /> <span>'.$conf['title'].'</span>',
+                '<img src="'.$logo.'" '.$logoSize[3].' alt="" /> <div id="title"><h1 id="title-ln1">Datacore</h1><h2 id="title-ln2">Windbourne Highlanders</h2><h3 id="title-ln3">Aerospace Division</h3></div>',
                 'accesskey="h" title="[H]"'
             );
         ?></h1>

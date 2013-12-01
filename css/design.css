@@ -408,6 +408,16 @@
 					WINDBOURNE HIGHLANDERS EDIT
 ####################################################################
 ##################################################################*/
+#tartan
+{
+	height: 150px;
+	width: 100%;
+	background-image: url(images/Tartan.jpg);
+	position: absolute;
+	z-index: 0;
+	box-shadow: 0 0 5em #000;
+}
+
 #wbh-content
 {
 	background-color: #181818;
@@ -437,4 +447,42 @@
 #dokuwiki__header h1 a
 {
     color: #DEDEDE;
+}
+
+/****************************************
+				Title
+****************************************/
+#title
+{
+	text-align: center;
+	float: left;
+	width: 250px;
+	margin: auto;
+}
+
+#title-ln1
+{
+	margin-bottom: 0px;
+}
+
+#title-ln2
+{
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+#title-ln3
+{
+	font-size: 15px;
+}
+
+#dokuwiki__header .headings
+{
+	width: 60%;
+	z-index: 9000;
+}
+
+#dokuwiki__header .tools
+{
+	width: 40%;
 }

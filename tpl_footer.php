@@ -28,11 +28,8 @@ if (!defined('DOKU_INC')) die();
 			<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
-			<p>If you do not want to see those ads, download <a href="https://getadblock.com/">AdBlock</a> for free!</p>
 		</div>
 		
-        <a href="http://www.dokuwiki.org/donate" title="Donate" <?php echo $target?>><img
-            src="<?php echo tpl_basedir(); ?>images/button-donate.gif" width="80" height="15" alt="Donate" /></a>
         <a href="http://www.php.net" title="Powered by PHP" <?php echo $target?>><img
             src="<?php echo tpl_basedir(); ?>images/button-php.gif" width="80" height="15" alt="Powered by PHP" /></a>
         <a href="http://validator.w3.org/check/referer" title="Valid HTML5" <?php echo $target?>><img
@@ -41,6 +38,8 @@ if (!defined('DOKU_INC')) die();
             src="<?php echo tpl_basedir(); ?>images/button-css.png" width="80" height="15" alt="Valid CSS" /></a>
         <a href="http://dokuwiki.org/" title="Driven by DokuWiki" <?php echo $target?>><img
             src="<?php echo tpl_basedir(); ?>images/button-dw.png" width="80" height="15" alt="Driven by DokuWiki" /></a>
+			
+		<p>Theme remake by <a href="mailto:thebird956@gmail.com">Julien Stébenne</a> aka TheBird956</p>
     </div>
 </div></div><!-- /footer -->
 

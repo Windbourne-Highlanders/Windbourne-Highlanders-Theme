@@ -27,6 +27,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 
 <body>
     <!--[if lte IE 7 ]><div id="IE7"><![endif]--><!--[if IE 8 ]><div id="IE8"><![endif]-->
+	<div id="tartan"></div>
     <div id="dokuwiki__site"><div id="dokuwiki__top"
         class="dokuwiki site mode_<?php echo $ACT ?> <?php echo ($showSidebar) ? 'showSidebar' : '';
         ?> <?php echo ($hasSidebar) ? 'hasSidebar' : ''; ?>">
