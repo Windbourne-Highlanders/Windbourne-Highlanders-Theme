@@ -408,14 +408,19 @@
 					WINDBOURNE HIGHLANDERS EDIT
 ####################################################################
 ##################################################################*/
-#tartan
+
+/* New font importation */
+@font-face
 {
-	height: 150px;
-	width: 100%;
-	background-image: url(images/Tartan.jpg);
-	position: absolute;
-	z-index: 0;
-	box-shadow: 0 0 5em #000;
+	font-family: "Nyala";
+	src: url("/fonts/nyala.ttf") format("truetype");
+}
+/* End of font importation */
+
+body
+{
+	background-image: url(images/Tartan.png);
+	background-repeat: repeat-x;
 }
 
 #wbh-content
@@ -456,33 +461,96 @@
 {
 	text-align: center;
 	float: left;
-	width: 250px;
+	width: 350px;
 	margin: auto;
+	font-family: Nyala, sans-serif;
+	color: #bfa67c;
+	/* The text shadow is used multiple time and with different blur distance
+	to make the shadow ore visible on the current background and to give two
+	different level of shadow, a smaller and a larger*/
+	text-shadow: 0 0 1em #000, 0 0 1em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000;
 }
 
 #title-ln1
 {
 	margin-bottom: 0px;
+	font-size: 2em;
 }
 
 #title-ln2
 {
-	font-size: 20px;
+	font-size: 1.5em;
 	margin-bottom: 0px;
 }
 
 #title-ln3
 {
-	font-size: 15px;
+	font-size: 1em;
 }
 
 #dokuwiki__header .headings
 {
 	width: 60%;
-	z-index: 9000;
 }
 
 #dokuwiki__header .tools
 {
 	width: 40%;
+}
+
+/****************************************
+				User tools
+****************************************/
+.tools.group
+{
+	text-shadow: 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.8em #000, 0 0 0.8em #000, 0 0 0.8em #000, 0 0 0.8em #000;
+	text-decoration: none;
+	transition: all 500ms;
+}
+
+.tools.group a:link, .tools.group a:visited
+{
+	text-shadow: 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.8em #000, 0 0 0.8em #000, 0 0 0.8em #000, 0 0 0.8em #000;
+	text-decoration: none;
+	transition: all 500ms;
+}
+
+.tools.group a:link:hover, .tools.group a:visited:hover,
+.tools.group a:link:focus, .tools.group a:visited:focus,
+.tools.group a:link:active, .tools.group a:visited:active
+{
+	text-decoration: none;
+	text-shadow: 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000;
+	color: #5F90BE;
+	transition: all 500ms;
+}
+
+.user
+{
+	text-shadow: none;
+	color: #faebd7;
+}
+
+.youarehere
+{
+	color: #faebd7;
+}
+
+#dokuwiki__pagetools
+{
+	text-shadow: none;
+}
+
+/****************************************
+	Transitions/Animations only
+****************************************/
+
+#dokuwiki__pagetools ul li a
+{
+	transition: background-color 500ms;
+}
+
+#dokuwiki__pagetools ul li a:hover
+{
+	transition: background-color 500ms;
 }
