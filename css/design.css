@@ -346,7 +346,7 @@
 }
 
 .dokuwiki div.page {
-    background: __background__);
+    /*background: __background__); This line is causing an error. The page style is not displaying*/ 
     color: inherit;
     border: 1px solid __background_alt__;
     box-shadow: 0 0 .5em __text_alt__;
@@ -460,7 +460,7 @@ body
 {
 	text-align: center;
 	float: left;
-	width: 350px;
+	width: 340px;
 	margin: auto;
 	font-family: Nyala, sans-serif;
 	color: #bfa67c;
@@ -497,6 +497,19 @@ body
 	width: 40%;
 }
 
+/****************************
+For screens smaller than 1024px
+****************************/
+
+@media (max-width:1037px)
+{
+	#title
+	{
+		position: absolute;
+		left: 250px;
+	}
+}
+
 /****************************************
 				User tools
 ****************************************/
@@ -507,7 +520,24 @@ body
 	transition: all 500ms;
 }
 
-.tools.group a:link, .tools.group a:visited
+.tools.group > a:link, .tools.group > a:visited
+{
+	text-decoration: none;
+	transition: all 500ms;
+	color: #fff;
+}
+
+.tools.group > a:link:hover, .tools.group > a:visited:hover,
+.tools.group > a:link:focus, .tools.group > a:visited:focus,
+.tools.group > a:link:active, .tools.group > a:visited:active
+{
+	text-decoration: none;
+	color: #DEDEDE;
+	transition: all 500ms;
+}
+
+/****** Restrict the shadow to the tool area and not the drop-down menu ******/
+.tools.group > a:link, .tools.group > a:visited
 {
 	text-shadow: 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.8em #000, 0 0 0.8em #000, 0 0 0.8em #000, 0 0 0.8em #000;
 	text-decoration: none;
@@ -515,9 +545,10 @@ body
 	color: #fff;
 }
 
-.tools.group a:link:hover, .tools.group a:visited:hover,
-.tools.group a:link:focus, .tools.group a:visited:focus,
-.tools.group a:link:active, .tools.group a:visited:active
+/****** Restrict the shadow to the tool area and not the drop-down menu ******/
+.tools.group > a:link:hover, .tools.group > a:visited:hover,
+.tools.group > a:link:focus, .tools.group > a:visited:focus,
+.tools.group > a:link:active, .tools.group > a:visited:active
 {
 	text-decoration: none;
 	text-shadow: 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000;

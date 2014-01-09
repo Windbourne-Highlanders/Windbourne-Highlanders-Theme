@@ -360,3 +360,52 @@
     margin-left: 0;
     margin-right: 9.5em;
 }
+
+/*##################################################################
+####################################################################
+					WINDBOURNE HIGHLANDERS EDIT
+####################################################################
+##################################################################*/
+
+/****************************************
+			Table of Content
+****************************************/
+
+#dw__toc
+{
+    background: rgba(0, 0, 0, 0.41);
+	border-left-color: #424242;
+}
+
+/****************************************
+				List Items
+****************************************/
+
+#dokuwiki__content li .li,
+#dokuwiki__aside li .li {
+    color: #979797;
+}
+
+.dokuwiki table.inline tr:hover th
+{
+	background-color: rgba(58, 58, 58, 1);
+	transition: background-color 0.25s;
+}
+
+/****************************************
+	  JSpopup (for the search popup)
+****************************************/
+
+.JSpopup
+{
+    background-color: rgba(66, 66, 66, 0.95);
+	color: #DEDEDE;
+    border: 1px solid #2B2B2B;
+	box-shadow: .1em .1em .1em #2B2B2B;
+	text-shadow: none;
+}
+
+.dokuwiki a.wikilink1
+{
+	color: #DEDEDE;
+}
