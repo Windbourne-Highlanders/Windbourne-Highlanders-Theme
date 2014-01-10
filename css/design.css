@@ -517,43 +517,36 @@ For screens smaller than 1024px
 {
 	text-shadow: 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.8em #000, 0 0 0.8em #000, 0 0 0.8em #000, 0 0 0.8em #000;
 	text-decoration: none;
-	transition: all 500ms;
 }
 
-.tools.group > a:link, .tools.group > a:visited
-{
-	text-decoration: none;
-	transition: all 500ms;
-	color: #fff;
-}
-
-.tools.group > a:link:hover, .tools.group > a:visited:hover,
-.tools.group > a:link:focus, .tools.group > a:visited:focus,
-.tools.group > a:link:active, .tools.group > a:visited:active
+.tools.group a:link, .tools.group a:visited
 {
 	text-decoration: none;
 	color: #DEDEDE;
-	transition: all 500ms;
+	transition: color 250ms;
 }
 
-/****** Restrict the shadow to the tool area and not the drop-down menu ******/
+.tools.group a:link:hover, .tools.group a:visited:hover,
+.tools.group a:link:focus, .tools.group a:visited:focus,
+.tools.group a:link:active, .tools.group a:visited:active
+{
+	text-decoration: none;
+	color: #5F90BE;
+	transition: color 250ms;
+}
+
 .tools.group > a:link, .tools.group > a:visited
 {
-	text-shadow: 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.8em #000, 0 0 0.8em #000, 0 0 0.8em #000, 0 0 0.8em #000;
-	text-decoration: none;
-	transition: all 500ms;
-	color: #fff;
+	color: #5F90BE;
+    transition: color 250ms;
 }
 
-/****** Restrict the shadow to the tool area and not the drop-down menu ******/
 .tools.group > a:link:hover, .tools.group > a:visited:hover,
 .tools.group > a:link:focus, .tools.group > a:visited:focus,
 .tools.group > a:link:active, .tools.group > a:visited:active
 {
-	text-decoration: none;
-	text-shadow: 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000;
 	color: #5F90BE;
-	transition: all 500ms;
+    transition: color 250ms;
 }
 
 .user
@@ -570,6 +563,15 @@ For screens smaller than 1024px
 #dokuwiki__pagetools
 {
 	text-shadow: none;
+}
+
+/****************************************
+		  Discussion Plugin
+****************************************/
+
+div.dokuwiki div.comment_wrapper
+{
+	background-color: transparent;
 }
 
 /****************************************
